@@ -1,0 +1,6 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/wpn_fps_sho_heffy_12g_ur_saiga12" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

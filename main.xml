@@ -21,6 +21,7 @@
 	<WeaponMod id="wpn_fps_sho_heffy_12g_lr_saiga12"   based_on="wpn_fps_ass_flint_body_upperreceiver" type="dreceiver"        unit="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/wpn_fps_sho_heffy_12g_lr_saiga12" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
 		<adds>
 			<value_node value="wpn_fps_sho_heffy_12g_stp_saiga12"/>
+			<value_node value="wpn_fps_sho_heffy_12g_lrp_saiga12"/>
 		</adds>
 	</WeaponMod>
 	
@@ -320,11 +321,11 @@
 
 		<!-- MAG PTS -->
 		
-		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/poly_8_df"/>
-		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/poly_8_nm"/>
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_8_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_8_nm"/>
 		
-		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/poly_8"/>
-		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/poly_8_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_8"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_8_thq"/>
 		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_8"/>
 		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_8"/>

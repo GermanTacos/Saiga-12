@@ -75,15 +75,15 @@
 	</WeaponMod>
 	
 	<Weapon unlock_level="0">
-		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" has_magazine="true" DAMAGE="6" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
-			<stats damage="60" spread="8" spread_moving="8" recoil="12" concealment="21"/>
-			<fire_mode_data fire_rate="0.08"/>
+		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false" has_magazine="true" DAMAGE="6" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
+			<stats damage="90" spread="8" spread_moving="8" recoil="10" concealment="21"/>
+			<fire_mode_data fire_rate="0.15"/>
 			<categories>
 				<value_node value="shotgun"/>
 			</categories>
 			<AMMO_PICKUP>
-					<value_node value="5"/>
-					<value_node value="10"/>
+					<value_node value="1"/>
+					<value_node value="1.7"/>
 			</AMMO_PICKUP>
 			<sounds fire="saiga12_fire_single" fire_single="saiga12_fire_single" fire_auto="saiga12_fire_single" use_fix="true"/>
 			<animations reload_name_id="flint" equip_id="equip_flint" recoil_steelsight="true"/>

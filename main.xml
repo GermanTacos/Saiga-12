@@ -14,6 +14,18 @@
 	
 	<!-- SAIGA-12 -->
 	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_chb_saiga12" based_on="wpn_fps_ass_flint_dh_standard" type="bolt" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_rs_saiga12" based_on="wpn_fps_ass_flint_body_upperreceiver" type="recoil_spring" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_gb_saiga12" based_on="wpn_fps_ass_flint_body_upperreceiver" type="gas_block" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_int1_saiga12" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal1" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_int2_saiga12" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal2" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_int3_saiga12" based_on="wpn_fps_ass_flint_body_upperreceiver" type="internal3" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_ch_saiga12"   based_on="wpn_fps_ass_flint_dh_standard"        type="drag_handle"      unit="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/wpn_fps_sho_heffy_12g_ch_saiga12" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_ba_saiga12"   based_on="wpn_fps_ass_flint_body_upperreceiver" type="barrel2"          unit="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12_pts/wpn_fps_sho_heffy_12g_ba_saiga12" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
@@ -116,6 +128,13 @@
 				<value_node value="wpn_fps_sho_heffy_12g_lfg_saiga12"/>
 				<value_node value="wpn_fps_sho_heffy_12g_pg_saiga12"/>
 				<value_node value="wpn_fps_sho_heffy_12g_st_saiga12"/>
+				
+				<value_node value="wpn_fps_sho_heffy_12g_chb_saiga12"/>
+				<value_node value="wpn_fps_sho_heffy_12g_rs_saiga12"/>
+				<value_node value="wpn_fps_sho_heffy_12g_gb_saiga12"/>
+				<value_node value="wpn_fps_sho_heffy_12g_int1_saiga12"/>
+				<value_node value="wpn_fps_sho_heffy_12g_int2_saiga12"/>
+				<value_node value="wpn_fps_sho_heffy_12g_int3_saiga12"/>
 				
 				<value_node value="wpn_fps_sho_heffy_12g_m_poly_5"/>
 				
@@ -373,9 +392,9 @@
 	</AddFiles>
 	
 	<Hooks directory="hooks">
-	<!--<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
+		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
-		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>-->
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 	</Hooks>
 	
 </table>

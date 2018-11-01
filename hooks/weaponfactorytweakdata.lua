@@ -199,12 +199,12 @@ local nonacog_aksight = {
 		"wpn_fps_smg_heffy_762_st_rk62",
 	}
 	
-	for i, part_id in ipairs(ak47stocks) do
+	for i, part_id in pairs(ak47stocks) do
 		table.insert(all_vityazstock, part_id)
 		table.insert(vityazstock, part_id)
 	end
 	
-	for i, part_id in ipairs(ak47stocks) do
+	for i, part_id in pairs(ak47stocks) do
 		if part_id ~= "wpn_fps_smg_heffy_all_st_ak47" and part_id ~= "wpn_fps_smg_heffy_762_st_ak103" then
 			self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
 		elseif part_id == "wpn_fps_smg_heffy_all_st_ak47" then
@@ -222,11 +222,11 @@ local nonacog_aksight = {
 		"wpn_fps_smg_heffy_762_sp_amd63",
 	}
 	
-	for i, part_id in ipairs(ak47stockparts) do
+	for i, part_id in pairs(ak47stockparts) do
 		table.insert(vityazstockpad, part_id)
 	end
 	
-	for i, part_id in ipairs(ak47stockparts) do
+	for i, part_id in pairs(ak47stockparts) do
 		if part_id ~= "wpn_fps_smg_heffy_762_sp_ak47" then
 			self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
 		else
@@ -247,7 +247,7 @@ local nonacog_aksight = {
 		"wpn_fps_smg_heffy_762_pg_rk62",
 	}
 	
-	for i, part_id in ipairs(ak47grips) do
+	for i, part_id in pairs(ak47grips) do
 		table.insert(vityazgrips, part_id)
 	end
 
@@ -261,12 +261,12 @@ if self.wpn_fps_smg_heffy_545 then
 		"wpn_fps_smg_heffy_545_st_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74stocks) do
+	for i, part_id in pairs(ak74stocks) do
 		table.insert(all_vityazstock, part_id)
 		table.insert(vityazstock, part_id)
 	end
 	
-	for i, part_id in ipairs(ak74stocks) do
+	for i, part_id in pairs(ak74stocks) do
 		self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
 	end
 	
@@ -278,11 +278,11 @@ if self.wpn_fps_smg_heffy_545 then
 		"wpn_fps_smg_heffy_545_stp_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74stockparts) do
+	for i, part_id in pairs(ak74stockparts) do
 		table.insert(vityazstockpad, part_id)
 	end
 	
-	for i, part_id in ipairs(ak74stockparts) do
+	for i, part_id in pairs(ak74stockparts) do
 		self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
 	end
 	
@@ -291,7 +291,7 @@ if self.wpn_fps_smg_heffy_545 then
 		"wpn_fps_smg_heffy_545_pg_mpi",
 	}
 	
-	for i, part_id in ipairs(ak74grips) do
+	for i, part_id in pairs(ak74grips) do
 		table.insert(vityazgrips, part_id)
 	end
 

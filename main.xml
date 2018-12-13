@@ -152,10 +152,11 @@
 				
 				<value_node value="wpn_fps_sho_heffy_12g_ext_saiga12k"/>
 				
-				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
-				<value_node value="wpn_fps_upg_ass_ns_linear"/>
-				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
-				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_shot_thick"/>
+				<value_node value="wpn_fps_upg_ns_shot_shark"/>
+				<value_node value="wpn_fps_upg_shot_ns_king"/>
+				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
+				<value_node value="wpn_fps_upg_ns_duck"/>
 				
 				<value_node value="wpn_fps_upg_fl_ass_sho_sho_peqbox"/>
 				<value_node value="wpn_fps_upg_fl_ass_sho_sho_surefire"/>
@@ -408,8 +409,8 @@
 	
 	<Hooks directory="hooks">
 	<!--<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
-		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
-		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>-->
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>-->
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 	</Hooks>
 	
 </table>

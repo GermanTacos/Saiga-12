@@ -20,7 +20,43 @@ if ( self.heffy_12g ) then
 ---- CAP aka YEEET ----	
 
 --- Base stuff ---	
-
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_ns", 
+        base_a_obj = "a_ns", 
+        position = Vector3( 0, 7.75, -0.4 ), -- -16
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_fl", 
+        base_a_obj = "a_fl", 
+        position = Vector3( -0.4, 0, -1 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_gl", 
+        base_a_obj = "a_fl", 
+        position = Vector3( -2.88, 27.2, -3.1 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_o", 
+        base_a_obj = "a_o", 
+        position = Vector3( 0, -7, 0.5 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_os", 
+        base_a_obj = "a_os", 
+        position = Vector3( 0, 1.5, 1.1 ), 
+        rotation = Rotation( 0, 10, 0 )
+	})
+--- Scope Mount ---
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_o_mount", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 0, 2.85 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 	
 --- Pistol Grips ---
 	

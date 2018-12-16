@@ -87,6 +87,14 @@
 		<pcs/>
 	</WeaponMod>
 	
+	<!-- Sound -->
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_so_pr" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+	<sound_switch suppressed="regular_a"/>
+	   <stats damage="0"/>
+	   <pcs/>
+    </WeaponMod>
+	
 	<Weapon unlock_level="0">
 		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" FIRE_MODE="single" use_stance="heffy_12g_ads" CAN_TOGGLE_FIREMODE="false" has_magazine="true" DAMAGE="6" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
 			<stats damage="90" spread="8" spread_moving="8" recoil="10" concealment="22"/>
@@ -98,7 +106,9 @@
 					<value_node value="1"/>
 					<value_node value="1.7"/>
 			</AMMO_PICKUP>
-			<sounds fire="saiga12_fire_single" fire_single="saiga12_fire_single" fire_auto="saiga12_fire_single" use_fix="true"/>
+			<sounds fire="saiga12_fire_single" fire_single="saiga12_fire_single" fire_auto="saiga12_fire_auto" use_fix="true">
+				<reload wp_flint_mag_out="wp_heffy_12g_mag_out" wp_flint_mag_in="wp_heffy_12g_mag_in" wp_flint_cock_pull="wp_heffy_12g_cock_pull" wp_flint_cock_release="wp_heffy_12g_cock_release"/>
+			</sounds>
 			<animations reload_name_id="flint" equip_id="equip_flint" recoil_steelsight="true"/>
 		</weapon>
 
@@ -152,6 +162,8 @@
 				
 				<value_node value="wpn_fps_sho_heffy_12g_ext_saiga12k"/>
 				
+				<value_node value="wpn_fps_sho_heffy_12g_so_pr"/>
+				
 				<value_node value="wpn_fps_upg_ns_shot_thick"/>
 				<value_node value="wpn_fps_upg_ns_shot_shark"/>
 				<value_node value="wpn_fps_upg_shot_ns_king"/>
@@ -188,11 +200,21 @@
 	</Weapon>
 	
 	<Sounds directory="assets">
-		<sound id="saiga12_fire_single" path="sounds/saiga12_fire_auto.ogg" prefix="regular"/>
-		<sound id="saiga12_fire_single" path="sounds/saiga12_fire_single.ogg" prefix="regular_a"/>
+		<sound id="saiga12_fire_auto" path="sounds/saiga12_fire_auto.ogg" prefix="regular"/>
+		<sound id="saiga12_fire_single" path="sounds/saiga12_fire_single.ogg" prefix="regular"/>
+		<sound id="saiga12_fire_auto" path="sounds/saiga12_fire_pr_auto.ogg" prefix="regular_a"/>
+		<sound id="saiga12_fire_single" path="sounds/saiga12_fire_pr_single.ogg" prefix="regular_a"/>
 		<redirect id="saiga12_fire_single" to="akm_fire" prefix="suppressed_a"/>
 		<redirect id="saiga12_fire_single" to="akm_fire" prefix="suppressed_b"/>
 		<redirect id="saiga12_fire_single" to="akm_fire" prefix="suppressed_c"/>
+		<sound id="wp_heffy_12g_mag_out" path="wp_heffy_12g_mag_out.ogg" prefix="first"/>
+		<sound id="wp_heffy_12g_mag_out" path="wp_heffy_12g_mag_out.ogg" prefix="third"/>
+		<sound id="wp_heffy_12g_mag_in" path="wp_heffy_12g_mag_in.ogg" prefix="first"/>
+		<sound id="wp_heffy_12g_mag_in" path="wp_heffy_12g_mag_in.ogg" prefix="third"/>
+		<sound id="wp_heffy_12g_cock_pull" path="wp_heffy_12g_cock_pull.ogg" prefix="first"/>
+		<sound id="wp_heffy_12g_cock_pull" path="wp_heffy_12g_cock_pull.ogg" prefix="third"/>
+		<sound id="wp_heffy_12g_cock_release" path="wp_heffy_12g_cock_release.ogg" prefix="first"/>
+		<sound id="wp_heffy_12g_cock_release" path="wp_heffy_12g_cock_release.ogg" prefix="third"/>
 	</Sounds>
 	
 	<AddFiles directory="assets">
@@ -402,6 +424,8 @@
 		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g/wpn_fps_sho_heffy_12g"/>
 		
 		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g/wpn_fps_sho_heffy_12g_npc"/>
+		
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_so_pr"/>
 		
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/heffy_12g"/>
 

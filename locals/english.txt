@@ -40,6 +40,8 @@
 	"bm_wp_wpn_fps_sho_heffy_12g_lr_saiga12"    : "Saiga-12 Receiver",
 	"bm_wp_wpn_fps_sho_heffy_12g_ur_saiga12"    : "Saiga-12 Dust Cover",
 	
+	"bm_wp_wpn_fps_sho_heffy_12g_so_pr"    		: "Project Reality sounds",
+	
 	"bm_wp_wpn_fps_sho_heffy_12g_ext_saiga12k"    : "Saiga-12K Top Rack"
 
 }

@@ -96,7 +96,7 @@
     </WeaponMod>
 	
 	<Weapon unlock_level="0">
-		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" FIRE_MODE="single" use_stance="heffy_12g_ads" CAN_TOGGLE_FIREMODE="false" has_magazine="true" DAMAGE="6" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
+		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false" has_magazine="true" DAMAGE="6" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
 			<stats damage="90" spread="8" spread_moving="8" recoil="10" concealment="22"/>
 			<fire_mode_data fire_rate="0.15"/>
 			<categories>
@@ -195,15 +195,18 @@
 			</uses_parts>
 			
 		</factory>
-		<stance/>
-		
+		<stance>
+			<steelsight>
+				<shoulders rotation="0 0 0 -1" translation="-10.25 -2 5.2"/>
+			</steelsight>
+		</stance>	
 	</Weapon>
 	
-	<Sounds directory="assets">
-		<sound id="saiga12_fire_auto" path="sounds/saiga12_fire_auto.ogg" prefix="regular"/>
-		<sound id="saiga12_fire_single" path="sounds/saiga12_fire_single.ogg" prefix="regular"/>
-		<sound id="saiga12_fire_auto" path="sounds/saiga12_fire_pr_auto.ogg" prefix="regular_a"/>
-		<sound id="saiga12_fire_single" path="sounds/saiga12_fire_pr_single.ogg" prefix="regular_a"/>
+	<Sounds directory="assets\sounds">
+		<sound id="saiga12_fire_auto" path="saiga12_fire_auto.ogg" prefix="regular"/>
+		<sound id="saiga12_fire_single" path="saiga12_fire_single.ogg" prefix="regular"/>
+		<sound id="saiga12_fire_auto" path="saiga12_fire_pr_auto.ogg" prefix="regular_a"/>
+		<sound id="saiga12_fire_single" path="saiga12_fire_pr_single.ogg" prefix="regular_a"/>
 		<redirect id="saiga12_fire_single" to="akm_fire" prefix="suppressed_a"/>
 		<redirect id="saiga12_fire_single" to="akm_fire" prefix="suppressed_b"/>
 		<redirect id="saiga12_fire_single" to="akm_fire" prefix="suppressed_c"/>

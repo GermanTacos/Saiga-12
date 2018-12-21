@@ -75,11 +75,19 @@
 	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_lfg_utg_short"  based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower"   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
 		<stats concealment="-1" recoil="1"/>
+		<forbids>
+			<value_node value="wpn_fps_sho_heffy_12g_ro_saiga12"/>
+		</forbids>
 		<pcs/>
 	</WeaponMod>
 
 	<WeaponMod id="wpn_fps_sho_heffy_12g_lfg_utg_long"   based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower"   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long"  texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
 		<stats concealment="-3" recoil="2"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
+			<value_node value="wpn_fps_upg_o_saiga12_l_scopemount"/>
+			<value_node value="wpn_fps_sho_heffy_12g_ro_saiga12"/>
+		</forbids>
 		<pcs/>
 	</WeaponMod>
 	

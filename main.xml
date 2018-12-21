@@ -71,9 +71,26 @@
 		<pcs/>
 	</WeaponMod>
 	
+	<!-- UTG -->
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_lfg_utg_short"  based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower"   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats concealment="-1" recoil="1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_heffy_12g_lfg_utg_long"   based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower"   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long"  texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats concealment="-3" recoil="2"/>
+		<pcs/>
+	</WeaponMod>
+	
 	<!-- MAG -->
 	
-	<WeaponMod id="wpn_fps_sho_heffy_12g_m_poly_5"     based_on="wpn_fps_ass_flint_m_standard"         type="magazine"         unit="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_5" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_sho_heffy_12g_m_poly_5"     based_on="wpn_fps_ass_flint_m_standard"         type="magazine"         unit="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_5"  texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_m_poly_10"    based_on="wpn_fps_ass_flint_m_standard"         type="magazine"         unit="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_10" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats extra_ammo_new="5" recoil="-2" concealment="-3"/>
+		<pcs/>
+	</WeaponMod>
 	
 	<!-- SCOPE MOUNT -->
 	
@@ -83,6 +100,15 @@
 		<stats recoil="1" concealment="-1"/>
 		<forbids>
 			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_ro_rail"      based_on="wpn_fps_ass_flint_body_upperreceiver" type="scopemount"                   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats recoil="-1" concealment="1"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
+			<value_node value="wpn_fps_sho_heffy_12g_ro_saiga12"/>
 		</forbids>
 		<pcs/>
 	</WeaponMod>
@@ -159,8 +185,14 @@
 				<value_node value="wpn_fps_sho_heffy_12g_st_saiga12"/>
 				
 				<value_node value="wpn_fps_sho_heffy_12g_m_poly_5"/>
+				<value_node value="wpn_fps_sho_heffy_12g_m_poly_10"/>
 				
-				<value_node value="wpn_fps_sho_heffy_12g_ext_saiga12k"/>
+			<!--<value_node value="wpn_fps_sho_heffy_12g_ext_saiga12k"/>-->
+			
+			<value_node value="wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+			<value_node value="wpn_fps_sho_heffy_12g_lfg_utg_short"/>
+			
+			<value_node value="wpn_fps_sho_heffy_12g_lfg_ro_rail"/>
 				
 				<value_node value="wpn_fps_sho_heffy_12g_so_pr"/>
 				
@@ -381,6 +413,26 @@
 		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12k_pts/wpn_fps_sho_heffy_12g_ext_saiga12k"/>
 		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12k_pts/wpn_fps_sho_heffy_12g_ext_saiga12k"/>
 		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12k_pts/wpn_fps_sho_heffy_12g_ext_saiga12k_thq"/>
+		
+		<!-- UTG PTS -->
+		
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/utg_foregrip_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/utg_foregrip_nm"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/utg_foregrip"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/utg_foregrip_thq"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short"/>
+		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short"/>
+		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short"/>
+		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short_thq"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_long_thq"/>
 
 		<!-- MAG PTS -->
 		
@@ -395,6 +447,32 @@
 		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_5"/>
 		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_5"/>
 		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_5_thq"/>
+		
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_10_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_10_nm"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_10"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/poly_10_thq"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_10"/>
+		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_10"/>
+		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_10"/>
+		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_10"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_mag_pts/wpn_fps_sho_heffy_12g_m_poly_10_thq"/>
+		
+		<!-- SHARED PTS -->
+		
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/rear_rail_df"/>
+		<texture         path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/rear_rail_nm"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/rear_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/rear_rail_thq"/>
+		
+		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail"/>
+		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail"/>
+		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail"/>
+		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail_thq"/>
 		
 		<!-- SCOPE MOUNT PTS -->
 		

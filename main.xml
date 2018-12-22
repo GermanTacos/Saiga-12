@@ -126,7 +126,7 @@
     </WeaponMod>
 	
 	<Weapon unlock_level="0">
-		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false" has_magazine="true" DAMAGE="6" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
+		<weapon id="heffy_12g" based_on="flint" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="10" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false" has_magazine="true" DAMAGE="6" rays="12" damage_near="2000" damage_far="3000" rays="12" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" can_shoot_through_shield="false" can_shoot_through_enemy="false" can_shoot_through_wall="false" tactical_reload="1" texture_bundle_folder="mods" global_value="heffy_12g">
 			<stats damage="90" spread="8" spread_moving="8" recoil="10" concealment="22"/>
 			<fire_mode_data fire_rate="0.15"/>
 			<categories>

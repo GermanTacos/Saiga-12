@@ -501,26 +501,12 @@
 		
 		<!-- SCOPE MOUNT PTS -->
 		
-		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount"/>
-		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount"/>
-		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount"/>
-		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount"/>
-		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount"/>
-		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount_thq"/>
-		
 		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_c_scopemount"/>
 		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_c_scopemount"/>
 		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_c_scopemount"/>
 		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_c_scopemount"/>
 		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_c_scopemount"/>
 		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_c_scopemount_thq"/>
-		
-		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_lc_scopemount"/>
-		<model           path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_lc_scopemount"/>
-		<object          path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_lc_scopemount"/>
-		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_lc_scopemount"/>
-		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_lc_scopemount"/>
-		<material_config path="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_lc_scopemount_thq"/>
 		
 		<!-- UNIT PTS -->
 		
@@ -531,6 +517,12 @@
 		
 		<unit            path="units/mods/weapons/wpn_fps_sho_heffy_12g/wpn_fps_sho_heffy_12g_npc"/>
 		
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_ext_saiga12k"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_ro_rail"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_m_poly_10"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_lfg_utg_short"/>
+		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_st_none"/>
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_heffy_12g_so_pr"/>
 		
 		<texture         path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/heffy_12g"/>

@@ -75,6 +75,13 @@
 	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_lfg_utg_short"  based_on="wpn_fps_ass_flint_body_upperreceiver" type="foregrip_lower"   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_utg_pts/wpn_fps_sho_heffy_12g_lfg_utg_short" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
 		<stats concealment="-1" recoil="1"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
+			<value_node value="wpn_fps_sho_heffy_12g_ro_rail"/>
+		</forbids>
+		<override>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
 		<pcs/>
 	</WeaponMod>
 
@@ -82,8 +89,11 @@
 		<stats concealment="-3" recoil="2"/>
 		<forbids>
 			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
-			<value_node value="wpn_fps_upg_o_saiga12_l_scopemount"/>
+			<value_node value="wpn_fps_sho_heffy_12g_ro_rail"/>
 		</forbids>
+		<override>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
 		<pcs/>
 	</WeaponMod>
 	
@@ -100,20 +110,14 @@
 	
 	<WeaponMod id="wpn_fps_upg_o_saiga12_scopemount"   based_on="wpn_fps_ass_flint_body_upperreceiver" type="scopemount" a_obj="a_o_mount" unit="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_o_ak_scopemount/wpn_fps_upg_o_ak_scopemount" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
 		
-	<WeaponMod id="wpn_fps_upg_o_saiga12_l_scopemount" based_on="wpn_fps_ass_flint_body_upperreceiver" type="scopemount" a_obj="a_o_mount" unit="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_upg_o_saiga12_l_scopemount" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
-		<stats recoil="1" concealment="-1"/>
-		<forbids>
-			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
-		</forbids>
-		<pcs/>
-	</WeaponMod>
-	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_ro_rail"      based_on="wpn_fps_ass_flint_body_upperreceiver" type="rear_sight"                   unit="units/mods/weapons/wpn_fps_sho_heffy_12g_shared_pts/wpn_fps_sho_heffy_12g_ro_rail" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
 		<stats recoil="-1" concealment="1"/>
 		<forbids>
 			<value_node value="wpn_fps_upg_o_saiga12_scopemount"/>
-			<value_node value="wpn_fps_sho_heffy_12g_ro_saiga12"/>
+			<value_node value="wpn_fps_sho_heffy_12g_lfg_utg_long"/>
+			<value_node value="wpn_fps_sho_heffy_12g_lfg_utg_short"/>
 		</forbids>
+		<override/>
 		<pcs/>
 	</WeaponMod>
 	
@@ -145,6 +149,8 @@
 		<factory id="wpn_fps_sho_heffy_12g" unit="units/mods/weapons/wpn_fps_sho_heffy_12g/wpn_fps_sho_heffy_12g">
 			
 			<animations fire="recoil" reload="reload" reload_not_empty="reload_not_empty" fire_steelsight="recoil"/>
+			
+			<adds/>
 			
 			<optional_types>
 				<value_node value="barrel"/>
@@ -233,7 +239,7 @@
 		</factory>
 		<stance>
 			<steelsight>
-				<shoulders rotation="0 0 0 -1" translation="-10.25 -2 5.2"/>
+				<shoulders rotation="0 0 0 -1" translation="-10.25 -2 5.7"/>
 			</steelsight>
 		</stance>	
 	</Weapon>
@@ -517,8 +523,8 @@
 	</AddFiles>
 	
 	<Hooks directory="hooks">
-	<!--<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
-		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>-->
+	<!--<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>-->
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 	</Hooks>
 	

@@ -102,11 +102,11 @@ function WeaponFactoryTweakData:akpack_write_error( func, cause, error_id, value
 		-- fti = failed to index
 		if cause == "fti" and value then
 			if error_id == "part" then
-				log("AK101_ERROR: (" .. func .. ")Attempt to index Part ID: '" .. value .. "' (a nil value)")
+				log("AK12_ERROR: (" .. func .. ")Attempt to index Part ID: '" .. value .. "' (a nil value)")
 			elseif error_id == "wpn" then
-				log("AK101_ERROR: (" .. func .. ")Attempt to index Weapon ID: '" .. value .. "' (a nil value)")
+				log("AK12_ERROR: (" .. func .. ")Attempt to index Weapon ID: '" .. value .. "' (a nil value)")
 			elseif error_id == "mod_type" then
-				log("AK101_ERROR: (" .. func .. ")Attempt to index mod_type: '" .. value .. "' (a nil value)")
+				log("AK12_ERROR: (" .. func .. ")Attempt to index mod_type: '" .. value .. "' (a nil value)")
 			end
 		end
 	end
@@ -177,130 +177,14 @@ local nonacog_aksight = {
 
 --- Compatibility Array Insertion ---
 
---[[if self.wpn_fps_smg_heffy_762 then
-
-	local ak47stocks = {
-		"wpn_fps_smg_heffy_all_st_ak47",
-		"wpn_fps_smg_heffy_762_st_akm",
-		"wpn_fps_smg_heffy_762_st_akm_worn",
-		"wpn_fps_smg_heffy_762_st_akms",
-		"wpn_fps_smg_heffy_762_st_akmsu",
-		"wpn_fps_smg_heffy_762_st_rpk",
-		"wpn_fps_smg_heffy_762_st_ak103",
-		"wpn_fps_smg_heffy_762_st_vepr",
-		"wpn_fps_smg_heffy_762_st_bl_t56",
-		"wpn_fps_smg_heffy_762_st_br_t56",
-		"wpn_fps_smg_heffy_762_st_mpi",
-		"wpn_fps_smg_heffy_762_st_2_mpi",
-		"wpn_fps_smg_heffy_762_st_amd63",
-		"wpn_fps_smg_heffy_762_st_amd65",
-		"wpn_fps_smg_heffy_762_st_m70",
-		"wpn_fps_smg_heffy_762_st_tabuk",
-		"wpn_fps_smg_heffy_762_st_rk62",
-	}
-	
-	for i, part_id in pairs(ak47stocks) do
-		table.insert(all_vityazstock, part_id)
-		table.insert(vityazstock, part_id)
-	end
-	
-	for i, part_id in pairs(ak47stocks) do
-		if part_id ~= "wpn_fps_smg_heffy_all_st_ak47" and part_id ~= "wpn_fps_smg_heffy_762_st_ak103" then
-			self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
-		elseif part_id == "wpn_fps_smg_heffy_all_st_ak47" then
-			self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu_ak47"}
-		end
-	end
-	
-	local ak47stockparts = {
-		"wpn_fps_smg_heffy_762_sp_ak47",
-		"wpn_fps_smg_heffy_762_sp_mpi",
-		"wpn_fps_smg_heffy_762_sp_2_mpi",
-		"wpn_fps_smg_heffy_762_sp_akm",
-		"wpn_fps_smg_heffy_762_sp_tabuk",
-		"wpn_fps_smg_heffy_762_stp_mpi",
-		"wpn_fps_smg_heffy_762_sp_amd63",
-	}
-	
-	for i, part_id in pairs(ak47stockparts) do
-		table.insert(vityazstockpad, part_id)
-	end
-	
-	for i, part_id in pairs(ak47stockparts) do
-		if part_id ~= "wpn_fps_smg_heffy_762_sp_ak47" then
-			self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
-		else
-			self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu_ak47"}
-		end
-	end
-	
-	local ak47grips = {
-		"wpn_fps_smg_heffy_all_pg_ak47",
-		"wpn_fps_smg_heffy_762_pg_akm",
-		"wpn_fps_smg_heffy_762_pg_ak103",
-		"wpn_fps_smg_heffy_762_pg_bl_t56",
-		"wpn_fps_smg_heffy_762_pg_br_t56",
-		"wpn_fps_smg_heffy_762_pg_mpi",
-		"wpn_fps_smg_heffy_762_pg_amd63",
-		"wpn_fps_smg_heffy_762_pg_amd65",
-		"wpn_fps_smg_heffy_762_pg_m92",
-		"wpn_fps_smg_heffy_762_pg_rk62",
-	}
-	
-	for i, part_id in pairs(ak47grips) do
-		table.insert(vityazgrips, part_id)
-	end
-
-end
-
-if self.wpn_fps_smg_heffy_545 then
-
-	local ak74stocks = {
-		"wpn_fps_smg_heffy_all_st_ak74",
-		"wpn_fps_smg_heffy_545_st_rpk74",
-		"wpn_fps_smg_heffy_545_st_mpi",
-	}
-	
-	for i, part_id in pairs(ak74stocks) do
-		table.insert(all_vityazstock, part_id)
-		table.insert(vityazstock, part_id)
-	end
-	
-	for i, part_id in pairs(ak74stocks) do
-		self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
-	end
-	
-	local ak74stockparts = {
-		"wpn_fps_smg_heffy_545_stp_ak74",
-		"wpn_fps_smg_heffy_545_stp_ak74_2",
-		"wpn_fps_smg_heffy_545_stp_rpk74",
-		"wpn_fps_smg_heffy_545_str_rpk74",
-		"wpn_fps_smg_heffy_545_stp_mpi",
-	}
-	
-	for i, part_id in pairs(ak74stockparts) do
-		table.insert(vityazstockpad, part_id)
-	end
-	
-	for i, part_id in pairs(ak74stockparts) do
-		self.parts.wpn_fps_smg_heffy_919_lr_vityaz.override[part_id] = {a_obj="a_s_akmsu"}
-	end
-	
-	local ak74grips = {
-		"wpn_fps_smg_heffy_all_pg_ak74",
-		"wpn_fps_smg_heffy_545_pg_mpi",
-	}
-	
-	for i, part_id in pairs(ak74grips) do
-		table.insert(vityazgrips, part_id)
-	end
-
-end]]--
-
 --------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Override- <V><I><T><Y><A><Z>----
 --------------------------------------------------------
-
+for i, o_id in pairs(all_saigasight) do
+	self.parts.wpn_fps_sho_heffy_12g_lfg_utg_long.override[o_id] = {a_obj="a_o_utg"}
+	self.parts.wpn_fps_sho_heffy_12g_lfg_utg_short.override[o_id] = {a_obj="a_o_front"}
+	self.parts.wpn_fps_sho_heffy_12g_ro_rail.override[o_id] = {a_obj="a_o_front"}
+end
 --- Barrel ---
 
 -- Default length barrel barrel extension and front sight override --
@@ -317,8 +201,9 @@ end]]--
 ----------------------------------------------------
 
 --- Gun ---
-
-	
+for i, o_id in pairs(all_saigasight) do
+	self.wpn_fps_sho_heffy_12g.adds[o_id] = {"wpn_fps_upg_o_saiga12_scopemount"}
+end
 -------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Forbids- <V><I><T><Y><A><Z>----
 -------------------------------------------------------
@@ -329,15 +214,21 @@ end]]--
 
 --- Vanilla sights ---
 -- non-acoc, default sights --
-
+for id, o_id in pairs(nonacog_aksight) do
+	self.parts[o_id].stance_mod.wpn_fps_sho_heffy_12g = {translation = Vector3(0, 7, -4.4)}
+end
 -- other sights --
+self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_sho_heffy_12g 			   = {translation = Vector3(0, 5, -4.4)}
+self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_sho_heffy_12g 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_sho_heffy_12g = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
+self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_sho_heffy_12g 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)
 
 ------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Tweaks- <V><I><T><Y><A><Z>----
 ------------------------------------------------------
 
 --- Barrel Extensions ---
-
+self.parts.wpn_fps_sho_heffy_12g_md_dummy.pcs = nil
 ------------------------------------------------------
 ----<V><I><T><Y><A><Z> -CLONES- <V><I><T><Y><A><Z>----
 ------------------------------------------------------

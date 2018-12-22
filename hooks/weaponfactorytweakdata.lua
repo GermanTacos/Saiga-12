@@ -167,7 +167,13 @@ local nonacog_aksight = {
 	"wpn_fps_upg_o_rx30",
 	"wpn_fps_upg_o_spot"
 }
-
+local all_saigafl = {
+	"wpn_fps_upg_fl_ass_smg_sho_peqbox",
+	"wpn_fps_upg_fl_ass_smg_sho_surefire",
+	"wpn_fps_upg_fl_ass_peq15",
+	"wpn_fps_upg_fl_ass_laser",
+	"wpn_fps_upg_fl_ass_utg"
+}
 --- Grips ---
 
 --- Bolts ---
@@ -184,6 +190,10 @@ for i, o_id in pairs(all_saigasight) do
 	self.parts.wpn_fps_sho_heffy_12g_lfg_utg_long.override[o_id] = {a_obj="a_o_utg"}
 	self.parts.wpn_fps_sho_heffy_12g_lfg_utg_short.override[o_id] = {a_obj="a_o_front"}
 	self.parts.wpn_fps_sho_heffy_12g_ro_rail.override[o_id] = {a_obj="a_o_front"}
+end
+for i, fl_id in pairs(all_saigafl) do
+	self.parts.wpn_fps_sho_heffy_12g_lfg_utg_long.override[fl_id] = {a_obj="a_fl_utg"}
+	self.parts.wpn_fps_sho_heffy_12g_lfg_utg_short.override[fl_id] = {a_obj="a_fl_utg"}
 end
 --- Barrel ---
 

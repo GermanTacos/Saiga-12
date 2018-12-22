@@ -61,7 +61,7 @@ if ( self.heffy_12g ) then
 	self:SetupAttachmentPoint("heffy_12g", {
 		name = "a_o_front", 
         base_a_obj = "a_o", 
-        position = Vector3( 0, 6, 0.5 ), 
+        position = Vector3( 0, 9, 0.5 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 	self:SetupAttachmentPoint("heffy_12g", {
@@ -71,7 +71,13 @@ if ( self.heffy_12g ) then
         rotation = Rotation( 0, 0, 0 ) 
 	})
 --- Pistol Grips ---
-	
+--- Gadgets ---
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_fl_utg", 
+        base_a_obj = "a_fl", 
+        position = Vector3( -0.2, 0, -2.7 ), 
+        rotation = Rotation( 0, 0, 0 ) 
+	})
 --- Stock Pads ---
 	
 --- Magazines ---

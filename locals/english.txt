@@ -49,6 +49,8 @@
 	
 	"bm_wp_wpn_fps_sho_heffy_12g_so_pr"    		: "Project Reality sounds",
 	
+	"bm_wp_wpn_fps_sho_heffy_12g_st_none"    	: "No Stock",
+	
 	"bm_wp_wpn_fps_sho_heffy_12g_ext_saiga12k"    : "Saiga-12K Top Rack"
 
 }

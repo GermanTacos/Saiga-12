@@ -183,6 +183,66 @@ local all_saigafl = {
 
 --- Compatibility Array Insertion ---
 
+if self.wpn_fps_ass_heffy_762 then
+
+	local ak47stocks = {
+		"wpn_fps_ass_heffy_all_st_ak47",
+		"wpn_fps_ass_heffy_762_st_akm",
+		"wpn_fps_ass_heffy_762_st_akm_worn",
+		"wpn_fps_ass_heffy_762_st_akms",
+		"wpn_fps_ass_heffy_762_st_akmsu",
+		"wpn_fps_ass_heffy_762_st_rpk",
+		"wpn_fps_ass_heffy_762_st_ak103",
+		"wpn_fps_ass_heffy_762_st_vepr",
+		"wpn_fps_ass_heffy_762_st_bl_t56",
+		"wpn_fps_ass_heffy_762_st_br_t56",
+		"wpn_fps_ass_heffy_762_st_mpi",
+		"wpn_fps_ass_heffy_762_st_2_mpi",
+		"wpn_fps_ass_heffy_762_st_amd63",
+		"wpn_fps_ass_heffy_762_st_amd65",
+		"wpn_fps_ass_heffy_762_st_m70",
+		"wpn_fps_ass_heffy_762_st_tabuk",
+		"wpn_fps_ass_heffy_762_st_rk62",
+		"wpn_fps_ass_heffy_762_sp_ak47",
+		"wpn_fps_ass_heffy_762_sp_mpi",
+		"wpn_fps_ass_heffy_762_sp_2_mpi",
+		"wpn_fps_ass_heffy_762_sp_akm",
+		"wpn_fps_ass_heffy_762_sp_tabuk",
+		"wpn_fps_ass_heffy_762_stp_mpi",
+		"wpn_fps_ass_heffy_762_sp_amd63"
+	}
+	
+	for id, part_id in pairs(ak47stocks) do
+		if part_id ~= "wpn_fps_ass_heffy_all_st_ak47" and part_id ~= "wpn_fps_ass_heffy_762_st_ak103" and part_id ~= "wpn_fps_ass_heffy_762_sp_ak47" then
+			self.parts.wpn_fps_sho_heffy_12g_lr_saiga12.override[part_id] = {a_obj="a_s_akmsu"}
+		elseif part_id == "wpn_fps_ass_heffy_all_st_ak47" then
+			self.parts.wpn_fps_sho_heffy_12g_lr_saiga12.override[part_id] = {a_obj="a_s_akmsu_ak47"}
+		end
+	end
+	
+	
+end
+
+if self.wpn_fps_ass_heffy_545 then
+
+	local ak74stocks = {
+		"wpn_fps_ass_heffy_all_st_ak74",
+		"wpn_fps_ass_heffy_545_st_rpk74",
+		"wpn_fps_ass_heffy_545_st_mpi",
+		"wpn_fps_ass_heffy_545_stp_ak74",
+		"wpn_fps_ass_heffy_545_stp_ak74_2",
+		"wpn_fps_ass_heffy_545_stp_rpk74s",
+		"wpn_fps_ass_heffy_545_str_rpk74",
+		"wpn_fps_ass_heffy_545_stp_mpi"
+	}
+	
+	for id, part_id in pairs(ak74stocks) do
+		self.parts.wpn_fps_sho_heffy_12g_lr_saiga12.override[part_id] = {a_obj="a_s_akmsu"}
+	end
+	
+	
+end
+
 --------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Override- <V><I><T><Y><A><Z>----
 --------------------------------------------------------
@@ -242,6 +302,79 @@ self.parts.wpn_fps_sho_heffy_12g_md_dummy.pcs = nil
 ------------------------------------------------------
 ----<V><I><T><Y><A><Z> -CLONES- <V><I><T><Y><A><Z>----
 ------------------------------------------------------
+
+if self.wpn_fps_ass_heffy_762 then
+
+	local ak47parts = {
+		"wpn_fps_ass_heffy_all_pg_ak47",
+		"wpn_fps_ass_heffy_all_st_ak47",
+		"wpn_fps_ass_heffy_762_pg_akm",
+		"wpn_fps_ass_heffy_762_st_akm",
+		"wpn_fps_ass_heffy_762_st_akm_worn",
+		"wpn_fps_ass_heffy_762_st_rpk",
+		"wpn_fps_ass_heffy_762_st_vepr",
+		"wpn_fps_ass_heffy_762_pg_bl_t56",
+		"wpn_fps_ass_heffy_762_st_bl_t56",
+		"wpn_fps_ass_heffy_762_pg_br_t56",
+		"wpn_fps_ass_heffy_762_st_br_t56",
+		"wpn_fps_ass_heffy_762_pg_mpi",
+		"wpn_fps_ass_heffy_762_st_mpi",
+		"wpn_fps_ass_heffy_762_st_2_mpi",
+		"wpn_fps_ass_heffy_762_pg_amd63",
+		"wpn_fps_ass_heffy_762_st_amd63",
+		"wpn_fps_ass_heffy_762_pg_amd65",
+		"wpn_fps_ass_heffy_762_st_amd65",
+		"wpn_fps_ass_heffy_762_st_m70",
+		"wpn_fps_ass_heffy_762_st_tabuk",
+		"wpn_fps_ass_heffy_762_pg_rk62",
+		"wpn_fps_ass_heffy_762_st_rk62"
+	}
+	
+	for id, part_id in pairs(ak47parts) do
+		if self.parts[part_id].pcs then
+			table.insert(self.wpn_fps_sho_heffy_12g.uses_parts, part_id)
+		end
+    end
+	
+end
+
+if self.wpn_fps_ass_heffy_545 then
+
+	local ak74parts = {
+		"wpn_fps_ass_heffy_all_pg_ak74",
+		"wpn_fps_ass_heffy_all_st_ak74",
+		"wpn_fps_ass_heffy_545_st_rpk74",
+		"wpn_fps_ass_heffy_545_pg_mpi",
+		"wpn_fps_ass_heffy_545_st_mpi"
+	}
+	
+    for id, part_id in pairs(ak74parts) do
+		if self.parts[part_id].pcs then
+			table.insert(self.wpn_fps_sho_heffy_12g.uses_parts, part_id)
+		end
+    end
+	
+end
+
+if self.parts.wpn_fps_ass_heffy_all_fc_pg_poly_pl and self.wpn_fps_ass_heffy_762 or self.wpn_fps_ass_heffy_545 then
+
+	local akwoodcolors = {
+		"wpn_fps_ass_heffy_all_fc_fg_wood_red",
+		"wpn_fps_ass_heffy_all_fc_pg_wood_red",
+		"wpn_fps_ass_heffy_all_fc_st_wood_red",
+		"wpn_fps_ass_heffy_all_fc_fg_wood_ora",
+		"wpn_fps_ass_heffy_all_fc_pg_wood_ora",
+		"wpn_fps_ass_heffy_all_fc_st_wood_ora",
+		"wpn_fps_ass_heffy_all_fc_fg_wood_lac",
+		"wpn_fps_ass_heffy_all_fc_pg_wood_lac",
+		"wpn_fps_ass_heffy_all_fc_st_wood_lac"
+	}
+
+	for id, part_id in pairs (akwoodcolors) do
+		table.insert(self.wpn_fps_sho_heffy_12g.uses_parts, part_id)
+	end
+		
+end
 
 
 ---------------------------------------------------

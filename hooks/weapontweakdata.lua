@@ -67,7 +67,7 @@ if ( self.heffy_12g ) then
 	self:SetupAttachmentPoint("heffy_12g", {
 		name = "a_o_utg", 
         base_a_obj = "a_o", 
-        position = Vector3( 0, -5, 0.5 ), 
+        position = Vector3( 0, -2, 0.5 ), 
         rotation = Rotation( 0, 0, 0 ) 
 	})
 --- Pistol Grips ---
@@ -79,6 +79,26 @@ if ( self.heffy_12g ) then
         rotation = Rotation( 0, 0, 0 ) 
 	})
 --- Stock Pads ---
+	
+--- Stocks ---
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_s_akmsu", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 0.875, 0.6875 ), --0.7, 0.55 | 0.175, 0.1375
+        rotation = Rotation( 0, 5, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_s_ak101", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, 0.875, 1.8 ), --0.7, 0.55 | 0.175, 0.1375
+        rotation = Rotation( 0, 5, 0 ) 
+	})
+	self:SetupAttachmentPoint("heffy_12g", {
+		name = "a_s_akmsu_ak47", 
+        base_a_obj = "a_body", 
+        position = Vector3( 0, -0.35, -0.275 ), 
+        rotation = Rotation( 0, -2.5, 0 ) 
+	})
 	
 --- Magazines ---
 	

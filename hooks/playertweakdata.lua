@@ -1,9 +1,9 @@
 Hooks:PostHook( PlayerTweakData, "init", "Saiga12GModStanceTweakData", function(self)
 
---AK
+--Saiga
 	
-	self.stances.heffy_12g_ads = deep_clone(self.stances.flint)
-	local ironsight_translation = Vector3(0, -13, 0.518)
-	self.stances.heffy_12g_ads.steelsight.shoulders.translation = self.stances.heffy_12g_ads.steelsight.shoulders.translation + ironsight_translation 
+	self.stances.heffy_12gk_ads = deep_clone(self.stances.heffy_12g)
+	self.stances.heffy_12gk_ads.steelsight.shoulders.translation = Vector3(-10.25, -2, 5)
+	self.stances.heffy_12gk_ads.steelsight.shoulders.rotation = Rotation(0, 0, 0)
 
 end )

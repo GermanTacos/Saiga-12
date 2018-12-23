@@ -272,7 +272,7 @@ end
 
 --- Gun ---
 for i, o_id in pairs(all_saigasight) do
-	self.wpn_fps_sho_heffy_12g.adds[o_id] = {"wpn_fps_upg_o_saiga12_scopemount"}
+	self.wpn_fps_sho_heffy_12g.adds[o_id] = {"wpn_fps_upg_o_saiga12_scopemount","wpn_fps_sho_heffy_12g_stance"}
 end
 -------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Forbids- <V><I><T><Y><A><Z>----

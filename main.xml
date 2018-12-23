@@ -69,11 +69,19 @@
 	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_ext_saiga12k" based_on="wpn_fps_ass_flint_body_upperreceiver" type="top_rack"         unit="units/mods/weapons/wpn_fps_sho_heffy_12g_saiga12k_pts/wpn_fps_sho_heffy_12g_ext_saiga12k" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
 		<stats concealment="-3" recoil="2"/>
+		<weapon_stance_override bm_w_heffy_12g="heffy_12gk_ads"/>
 		<forbids>
 			<value_node value="wpn_fps_sho_heffy_12g_ro_rail"/>
 			<value_node value="wpn_fps_sho_heffy_12g_lfg_utg_long"/>
 			<value_node value="wpn_fps_sho_heffy_12g_lfg_utg_short"/>
 		</forbids>
+		<override>
+			<wpn_fps_sho_heffy_12g_stance>
+				<stance_mod>
+					<wpn_fps_sho_heffy_12g translation="0 0 0.7"/>
+				</stance_mod>
+			</wpn_fps_sho_heffy_12g_stance>
+		</override>
 		<pcs/>
 	</WeaponMod>
 	
@@ -135,6 +143,12 @@
 	</WeaponMod>
 	
 	<!-- Sound -->
+	
+	<WeaponMod id="wpn_fps_sho_heffy_12g_stance" based_on="wpn_upg_o_marksmansight_rear" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_sho_heffy_12g translation="0 0 0"/>
+		</stance_mod>
+	</WeaponMod>
 	
 	<WeaponMod id="wpn_fps_sho_heffy_12g_so_pr" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
 	<sound_switch suppressed="regular_a"/>
@@ -530,7 +544,7 @@
 	</AddFiles>
 	
 	<Hooks directory="hooks">
-	<!--<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>-->
+	    <hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
 		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 	</Hooks>

@@ -36,6 +36,9 @@
 			<value_node value="wpn_fps_sho_heffy_12g_fsl_saiga12"/>
 			<value_node value="wpn_fps_sho_heffy_12g_rsb_saiga12"/>
 		</adds>
+		<forbids>
+			<value_node value="wpn_upg_o_marksmansight_front"/>
+		</forbids>
 		<override/>
 	</WeaponMod>
 	

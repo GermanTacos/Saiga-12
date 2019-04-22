@@ -179,7 +179,7 @@
 			<animations reload_name_id="flint" equip_id="equip_flint" recoil_steelsight="true"/>
 		</weapon>
 
-		<factory id="wpn_fps_sho_heffy_12g" unit="units/mods/weapons/wpn_fps_sho_heffy_12g/wpn_fps_sho_heffy_12g">
+		<factory id="wpn_fps_sho_heffy_12g" unit="units/mods/weapons/wpn_fps_sho_heffy_12g/wpn_fps_sho_heffy_12g" stock_adapter="wpn_fps_ass_heffy_all_sad_alpha">
 			
 			<animations fire="recoil" reload="reload" reload_not_empty="reload_not_empty" fire_steelsight="recoil"/>
 			

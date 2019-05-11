@@ -85,7 +85,7 @@ function WeaponFactoryTweakData:akpack_check_adds( mod_type, mod_woa )
 end
 
 --- Part Copy Base ---
-function WeaponFactoryTweakData:vityaz19_copy_part( att_og, att_cp )
+function WeaponFactoryTweakData:saiga12g_copy_part( att_og, att_cp )
     if self.parts[att_og] then
         self.parts[att_cp] = deep_clone(self.parts[att_og])
         self.parts[att_cp].pcs = {}
@@ -272,7 +272,7 @@ end
 
 --- Gun ---
 for i, o_id in pairs(all_saigasight) do
-	self.wpn_fps_sho_heffy_12g.adds[o_id] = {"wpn_fps_upg_o_saiga12_scopemount","wpn_fps_sho_heffy_12g_stance"}
+	self.wpn_fps_sho_heffy_12g.adds[o_id] = {"wpn_fps_upg_o_saiga12_scopemount"}
 end
 -------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Forbids- <V><I><T><Y><A><Z>----
@@ -283,16 +283,13 @@ end
 ------------------------------------------------------
 
 --- Vanilla sights ---
--- non-acoc, default sights --
-for id, o_id in pairs(nonacog_aksight) do
-	self.parts[o_id].stance_mod.wpn_fps_sho_heffy_12g = {translation = Vector3(0, 7, -4.4)}
+for id, o_id in pairs(all_saigasight) do
+	if self.parts[o_id].stance_mod.wpn_fps_ass_flint then
+		self.parts[o_id].stance_mod.wpn_fps_sho_heffy_12g = deep_clone(self.parts[o_id].stance_mod.wpn_fps_ass_flint)
+	else
+		log("[AK_Pack] [ERROR] WHO THE FUCK MESSED WITH SIGHT STANCES THIS TIME!? " .. o_id)
+	end
 end
--- other sights --
-self.parts.wpn_fps_upg_o_acog.stance_mod.wpn_fps_sho_heffy_12g 			   = {translation = Vector3(0, 5, -4.4)}
-self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_sho_heffy_12g 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_sho_heffy_12g = deep_clone(self.parts.wpn_fps_upg_o_xpsg33_magnifier.stance_mod.wpn_fps_ass_flint)
-self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_sho_heffy_12g 		   = deep_clone(self.parts.wpn_fps_upg_o_45rds_v2.stance_mod.wpn_fps_ass_flint)
-
 ------------------------------------------------------
 ----<V><I><T><Y><A><Z> -Tweaks- <V><I><T><Y><A><Z>----
 ------------------------------------------------------

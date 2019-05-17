@@ -152,21 +152,6 @@ local all_saigasight = {
 	"wpn_fps_upg_o_rx30",
 	"wpn_fps_upg_o_spot"
 }
-local nonacog_aksight = {
-	"wpn_fps_upg_o_specter",
-	"wpn_fps_upg_o_aimpoint",
-	"wpn_fps_upg_o_aimpoint_2",
-	"wpn_fps_upg_o_docter",
-	"wpn_fps_upg_o_eotech",
-	"wpn_fps_upg_o_t1micro",
-	"wpn_fps_upg_o_cmore",
-	"wpn_fps_upg_o_cs",
-	"wpn_fps_upg_o_eotech_xps",
-	"wpn_fps_upg_o_reflex",
-	"wpn_fps_upg_o_rx01",
-	"wpn_fps_upg_o_rx30",
-	"wpn_fps_upg_o_spot"
-}
 local all_saigafl = {
 	"wpn_fps_upg_fl_ass_smg_sho_peqbox",
 	"wpn_fps_upg_fl_ass_smg_sho_surefire",

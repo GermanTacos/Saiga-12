@@ -1,1 +1,2 @@
 - [ ] Fix missing face under the S12K TopRack
+- [ ] Fix thq issue on the S12K TopRack

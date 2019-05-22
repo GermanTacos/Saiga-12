@@ -152,6 +152,22 @@ local all_saigasight = {
 	"wpn_fps_upg_o_rx30",
 	"wpn_fps_upg_o_spot"
 }
+local vanilla_saigasight = {
+	"wpn_fps_upg_o_specter",
+	"wpn_fps_upg_o_aimpoint",
+	"wpn_fps_upg_o_aimpoint_2",
+	"wpn_fps_upg_o_docter",
+	"wpn_fps_upg_o_eotech",
+	"wpn_fps_upg_o_t1micro",
+	"wpn_fps_upg_o_cmore",
+	"wpn_fps_upg_o_acog",
+	"wpn_fps_upg_o_cs",
+	"wpn_fps_upg_o_eotech_xps",
+	"wpn_fps_upg_o_reflex",
+	"wpn_fps_upg_o_rx01",
+	"wpn_fps_upg_o_rx30",
+	"wpn_fps_upg_o_spot"
+}
 local all_saigafl = {
 	"wpn_fps_upg_fl_ass_smg_sho_peqbox",
 	"wpn_fps_upg_fl_ass_smg_sho_surefire",
@@ -162,6 +178,30 @@ local all_saigafl = {
 --- Grips ---
 
 --- Bolts ---
+
+--- CAFCW ---
+if attach_tables then
+	for _, fl_id in pairs(attach_tables.Gadgets) do
+		if self.parts[fl_id] then
+			table.insert(all_saigafl, fl_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.ACOG) do
+		if self.parts[o_id] then
+			table.insert(all_saigasight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Custom) do
+		if self.parts[o_id] then
+			table.insert(all_saigasight, o_id)
+		end
+	end
+	for _, o_id in pairs(attach_tables.Specter) do
+		if self.parts[o_id] then
+			table.insert(all_saigasight, o_id)
+		end
+	end
+end
 
 
 --- Multi ---
@@ -256,7 +296,7 @@ end
 ----------------------------------------------------
 
 --- Gun ---
-for i, o_id in pairs(all_saigasight) do
+for i, o_id in pairs(vanilla_saigasight) do
 	self.wpn_fps_sho_heffy_12g.adds[o_id] = {"wpn_fps_upg_o_saiga12_scopemount"}
 end
 -------------------------------------------------------
@@ -268,7 +308,7 @@ end
 ------------------------------------------------------
 
 --- Vanilla sights ---
-for id, o_id in pairs(all_saigasight) do
+for id, o_id in pairs(vanilla_saigasight) do
 	if self.parts[o_id].stance_mod.wpn_fps_ass_flint then
 		self.parts[o_id].stance_mod.wpn_fps_sho_heffy_12g = deep_clone(self.parts[o_id].stance_mod.wpn_fps_ass_flint)
 	else

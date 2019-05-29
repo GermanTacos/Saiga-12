@@ -208,6 +208,11 @@ end
 
 --- Compatibility Array Insertion ---
 
+if self.parts.wpn_fps_upg_o_thersig then
+	table.insert(all_saigasight, "wpn_fps_upg_o_thersig")
+	table.insert(vanilla_saigasight, "wpn_fps_upg_o_thersig")
+end
+
 if self.wpn_fps_ass_heffy_762 then
 
 	local ak47stocks = {

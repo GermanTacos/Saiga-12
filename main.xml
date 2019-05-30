@@ -295,6 +295,13 @@
 				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
 				<value_node value="wpn_fps_upg_ns_duck"/>
 				
+				<value_node value="wpn_fps_upg_a_slug"/>
+			    <value_node value="wpn_fps_upg_a_custom"/>
+		    	<value_node value="wpn_fps_upg_a_custom_free"/>
+		    	<value_node value="wpn_fps_upg_a_explosive"/>
+		     	<value_node value="wpn_fps_upg_a_piercing"/>
+		     	<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
 				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
 				<value_node value="wpn_fps_upg_fl_ass_peq15"/>

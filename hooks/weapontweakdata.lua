@@ -1,21 +1,20 @@
 Hooks:PostHook( WeaponTweakData, "init", "SaigaModInit", function(self)
 
 if ( self.heffy_12g ) then
-
+--[[
+if self.new_m4.reload_timed_stance_mod then
+	self.heffy_12g.reload_timed_stance_mod = {
+		empty = {
+			hip = {
+				{t = 2.0, translation = Vector3(-20, 10, -7), rotation = Rotation(-30, 0, -20), speed = 0.5}, -- turn gun over to check that bolt has released
+				{t = 0.0, translation = Vector3(0, 0, 0), rotation = Rotation(0, 0, 0), speed = 0.5} -- return to default position
+			}
+		}
+	}
+end
+]]
 ---- Bipod Stuff ----
---[[self.heffy_919.animations.bipod_enter = "bipod_enter"
-	self.heffy_919.animations.bipod_exit = "bipod_exit"
-	self.heffy_919.animations.bipod_recoil = "bipod_recoil"
-	self.heffy_919.animations.bipod_recoil_enter = "bipod_recoil"
-	self.heffy_919.animations.bipod_recoil_loop = "bipod_recoil_loop"
-	self.heffy_919.animations.bipod_recoil_exit = "bipod_recoil_exit"
-	self.heffy_919.animations.use_stance = "ak74"	
-	self.heffy_919.spread.bipod = default_bipod_spread
-	self.heffy_919.bipod_camera_spin_limit = 45
-	self.heffy_919.bipod_camera_pitch_limit = 20
-	self.heffy_919.bipod_weapon_translation = Vector3(-8.5,20,-7.5)
-	self.heffy_919.bipod_deploy_multiplier = 1
-	self.heffy_919.timers.deploy_bipod = 1]]--
+--[[]]
 	
 ---- CAP aka YEEET ----	
 

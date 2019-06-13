@@ -1,18 +1,18 @@
 Hooks:PostHook( WeaponTweakData, "init", "SaigaModInit", function(self)
 
 if ( self.heffy_12g ) then
---[[
+
 if self.new_m4.reload_timed_stance_mod then
 	self.heffy_12g.reload_timed_stance_mod = {
 		empty = {
 			hip = {
-				{t = 2.0, translation = Vector3(-20, 10, -7), rotation = Rotation(-30, 0, -20), speed = 0.5}, -- turn gun over to check that bolt has released
-				{t = 0.0, translation = Vector3(0, 0, 0), rotation = Rotation(0, 0, 0), speed = 0.5} -- return to default position
+				{t = 1.5, translation = Vector3(-30, 15, -10), rotation = Rotation(-50, 0, -40), speed = 0.5}, -- turn gun over to check that bolt has released
+				{t = 0.5, translation = Vector3(0, 0, 0), rotation = Rotation(0, 0, 0), speed = 0.5} -- return to default position
 			}
 		}
 	}
 end
-]]
+--[[]]
 ---- Bipod Stuff ----
 --[[]]
 	

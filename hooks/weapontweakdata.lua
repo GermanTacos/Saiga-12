@@ -7,7 +7,7 @@ if self.new_m4.reload_timed_stance_mod then
 		empty = {
 			hip = {
 				{t = 1.5, translation = Vector3(-30, 15, -10), rotation = Rotation(-50, 0, -40), speed = 0.5}, -- turn gun over to check that bolt has released
-				{t = 0.5, translation = Vector3(0, 0, 0), rotation = Rotation(0, 0, 0), speed = 0.5} -- return to default position
+				{t = 0.9, translation = Vector3(0, 0, 0), rotation = Rotation(0, 0, 0), speed = 0.5} -- return to default position
 			}
 		}
 	}
